@@ -35,12 +35,12 @@ const Navbar = () => {
             ))}
             {/* Download CV */}
             <a
-              href="public/Ankit_Resume.pdf"
+              href="/Ankit_Resume.pdf"
               download
               className="px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-sm font-medium"
             >
               {/* <Download size={16} /> */}
-             Resume
+              Resume
             </a>
             {/* Hire Me */}
             <a
@@ -73,6 +73,14 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/Ankit_Resume.pdf"
+              download
+              onClick={() => setIsOpen(false)}
+              className="inline-block px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-sm font-medium"
+            >
+              Resume
+            </a>
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
