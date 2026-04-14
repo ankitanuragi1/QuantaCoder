@@ -12,7 +12,7 @@ const HeroSection = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               Hi, I'm a
               <br />
-              <span className="text-gradient glow-text">Creative Developer</span>
+              <span className="text-gradient glow-text">Software Developer</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-md">
               I build modern, responsive & powerful websites

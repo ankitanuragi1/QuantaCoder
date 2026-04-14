@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Download } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
+  // { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -17,8 +18,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2 text-xl font-bold">
-            <span className="text-gradient">&lt;/&gt;</span>
-            <span className="text-foreground">Quanta Coder</span>
+            <span className="text-gradient"><img src="/quantalogo.png" className="h-10 w-auto cursor-pointer" alt="Logo"></img></span>
+            <span className="text-foreground"></span>
           </a>
 
           {/* Desktop */}
@@ -32,6 +33,16 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            {/* Download CV */}
+            <a
+              href="public/Ankit_Resume.pdf"
+              download
+              className="px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-sm font-medium"
+            >
+              {/* <Download size={16} /> */}
+             Resume
+            </a>
+            {/* Hire Me */}
             <a
               href="#contact"
               className="px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-sm font-medium"

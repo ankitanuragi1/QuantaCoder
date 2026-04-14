@@ -1,4 +1,4 @@
-import aboutAvatar from "@/assets/about-avatar.png";
+import aboutAvatar from "@/assets/ankitn110.png";
 import { Code, Monitor, Server } from "lucide-react";
 
 const categories = [

@@ -33,8 +33,13 @@ const projects = [
   },
 ];
 
+const showProjects = false;
+
 const ProjectsSection = () => {
   return (
+    <>
+    {showProjects && (
+      <section id="projects" className="py-20 relative">
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
@@ -83,6 +88,9 @@ const ProjectsSection = () => {
         </div>
       </div>
     </section>
+       </section>
+    )}
+  </>
   );
 };
 
